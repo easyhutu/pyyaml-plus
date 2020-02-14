@@ -10,7 +10,7 @@ def load(steam):
     try:
         r_steam = _make_import_steam(steam)
         data = _load(r_steam)
-        if data[import_key]:
+        if data.get(import_key):
             data.pop(import_key)
         return data
     except YAMLError as e:
