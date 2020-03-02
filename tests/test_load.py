@@ -1,4 +1,4 @@
-from yamlplus import load, dump
+from yamlplus import load, dump, load_path
 
 
 def test_load():
@@ -28,3 +28,4 @@ def test_load():
 
 if __name__ == '__main__':
     test_load()
+    print(load_path(r'D:\pyyaml-plus\tests\a.yml'))
